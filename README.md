@@ -10,7 +10,7 @@
 | Model | Description | Reference |
 |---|---|---|
 | Baseline — GCN | Graph Convolutional Network | Kipf & Welling, ICLR 2017 |
-| Variant 1 — Dendritic GCN | GCN augmented with learnable dendritic branches via Perforated AI | Beniaguev et al., Nature Communications 2025 |
+| Variant 1 — GAT | Graph Attention Network | Veličković et al., ICLR 2019 |
 | Variant 2 — Sparse GCN | GCN trained with RigL dynamic sparse training (50% sparsity) | Evci et al., ICML 2020 |
 
 ## AI Tool Use
