@@ -1,0 +1,5 @@
+{
+  "Baseline GCN": 198.758,
+  "GAT": 300.346,
+  "Sparse GCN (RigL)": 225.911
+}
