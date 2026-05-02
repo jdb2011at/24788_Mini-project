@@ -27,7 +27,7 @@ All experiments are designed to run on **Google Colab (free tier)** with a T4 GP
 
 1. Upload `qm9_mini_project.ipynb` to [colab.research.google.com](https://colab.research.google.com).
 2. Set runtime to **GPU** (Runtime → Change runtime type → T4 GPU).
-3. Run all cells top-to-bottom. The notebook handles all installs and data downloads automatically.
+3. Run cells 1-5. The notebook handles all installs and data downloads automatically.
 
 ### Option B — Run locally
 
@@ -40,7 +40,7 @@ pip install rigl-torch
 pip install perforatedai
 ```
 
-Then open `qm9_mini_project.ipynb` in Jupyter and run all cells.
+Then open `qm9_mini_project.ipynb` in Jupyter and run cells 1-5.
 
 ### Data Download
 
@@ -77,33 +77,6 @@ Cell 32 loads all three checkpoints and prints the test MAE table.
 Cell 33 loads the history JSON files and regenerates `results_comparison.pdf`.
 
 No training is required. Expected runtime for the reproduce section: ~2 minutes on a T4 GPU.
-
----
-
-## Expected Results
-
-Approximate test MAEs after 50 epochs (results will vary slightly by run):
-
-| Model | Test MAE (meV) |
-|---|---|
-| Baseline GCN | ~120–160 |
-| Dendritic GCN | varies (PAI restructures iteratively) |
-| Sparse GCN (RigL) | comparable to baseline at 50% sparsity |
-| SotA GNN reference | ~50 |
-
-Note: the goal of this project is not to match SotA but to compare the three architectures fairly and analyse why they behave differently.
-
----
-
-## Repository Structure
-
-```
-qm9_mini_project.ipynb   # main Colab notebook (training + evaluation)
-README.md                # this file
-repro_eval.py            # source for Section 10a (reproduce metrics)
-repro_figures.py         # source for Section 10b (reproduce figures)
-make_notebook.py         # script used to generate the .ipynb
-```
 
 ---
 
