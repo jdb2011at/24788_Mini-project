@@ -83,6 +83,6 @@ No training is required. Expected runtime for the reproduce section: ~2 minutes 
 ## References
 
 - Kipf & Welling, "Semi-supervised Classification with Graph Convolutional Networks," ICLR 2017.
-- Beniaguev et al., "Dendrites endow artificial neural networks with accurate, robust and parameter-efficient learning," Nature Communications, 2025.
+- Veličković et al., "Graph Attention Networks," ICLR 2019.
 - Evci et al., "Rigging the Lottery: Making All Tickets Winners," ICML 2020.
 - Ramakrishnan et al., "Quantum chemistry structures and properties of 134 kilo molecules," Scientific Data, 2014 (QM9 dataset).
